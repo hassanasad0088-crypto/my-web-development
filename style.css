@@ -22,16 +22,32 @@ nav a {
   margin-left: 20px;
 }
 .hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: #ffe0b2;
+min-height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 80px 20px;
+
+background: 
+ linear-gradient
+ (rgba(0, 0, 0, 0.65),
+ rgba(0, 0, 0, 0.75)
+ ),
+ url(bgpic.jpg);
+
+background-size: cover;
+background-position: center;
+color: #f5f0e8;
 }
 .hero h2 {
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 .hero p {
-  margin-bottom: 25px;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 button {
   background: #e65c00;
@@ -143,4 +159,46 @@ text-align: center;
         flex-direction: column;
         align-items: center;
     }
+}
+body {
+background: #171717;
+color:#f5f0E8;
+}
+header {
+background: #111111;
+border-bottom: 1px solid #383838;
+}
+header h1 {
+color: #D99A45;
+letter-spacing: 2px;
+}
+nav a {
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #D99A45;
+}
+.menu {
+  background: #171717;
+  padding: 70px 20px;
+}
+.menu h2 {
+  color: #D99A45;
+   font-size: 34px;
+}
+.food-card p {
+  color: #cccccc;
+}
+.food-card strong {
+  color: #D99A45;
+}
+button {
+  background: #D99A45;
+  color: #171717;
+  font-weight: bold;
+}
+footer {
+  background: #111111;
+  color: #cccccc;
+  border-top: 1px solid #383838;
 }
